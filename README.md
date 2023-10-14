@@ -1,5 +1,8 @@
 # Crypto Trade App
 
+## Live Preview:
+[Live Preview](https://rawcdn.githack.com/carlos-ssh/potential-parakeet/ea59fee8ce85a386cd6b72bbd2338c3afb5d3e23/Crypto%20Trade/index.html#realtime)
+
 ## Overview
 
 Crypto Trade App is a simple web application that allows users to perform real-time cryptocurrency exchanges. This project focuses on providing users with accurate and up-to-date exchange rates using a WebSocket server.
