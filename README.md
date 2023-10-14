@@ -1,13 +1,15 @@
 # Crypto Trade App
 
 ## Live Preview:
-[Live Preview](https://rawcdn.githack.com/carlos-ssh/potential-parakeet/ea59fee8ce85a386cd6b72bbd2338c3afb5d3e23/Crypto%20Trade/index.html#realtime)
+
+[Live Preview](https://rawcdn.githack.com/carlos-ssh/potential-parakeet/ea59fee8ce85a386cd6b72bbd2338c3afb5d3e23/Crypto%20Trade/index.html#realtime) || [Video Presentation Link](https://www.loom.com/share/f849df80b96d40ce9074d34c7ca57958?sid=5d27cf7b-d3e7-4965-9bbb-249f4724808e)
 
 ## Overview
 
 Crypto Trade App is a simple web application that allows users to perform real-time cryptocurrency exchanges. This project focuses on providing users with accurate and up-to-date exchange rates using a WebSocket server.
 
 ## Technologies used:
+
 - HTML 5
 - Javascript
 - Tailwind
@@ -41,6 +43,7 @@ Simply open the `index.html` file in a web browser to launch the Crypto Trade Ap
 ```bash
 # Clone the repository
 git clone https://github.com/your-username/crypto-trade-app.git
+
 ```
 
 ```bash
@@ -48,9 +51,11 @@ git clone https://github.com/your-username/crypto-trade-app.git
 cd crypto-trade-app
 
 # Open the index.html file in a web browser
+
 ```
 
 Author: [Carlos Flores](https://github.com/carlos-ssh)
 
 # License
+
 This project is licensed under the MIT License - see the LICENSE.md file for details.
