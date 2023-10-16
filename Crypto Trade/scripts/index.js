@@ -60,20 +60,30 @@ socket.onmessage = function (event) {
         console.log(realTimeTrade);
 
         const contentDiv = document.getElementById('content');
-        contentDiv.innerHTML = `
 
-            <div class="w-full flex flex-col justify-center items-center">
-                <div class="flex flex-col bg-green-400 text-white py-5 w-full justify-center items-center shadow-md">
-                    <span class="text-sm">ID: ${realTimeTrade.uuid}</span>
-                    <h2 class="text-5xl text-black mt-3 font-bold">$${realTimeTrade.price}</h2>
-                    <h2 class="text-center text-3xl text-black mb-3 font-bold">${selectedCryptoAsset} - ${selectedFiatAsset}</h2>
-                    <span class="uppercase">${realTimeTrade.type}</span>
-                    <span>Last update: ${formatTimestamp(realTimeTrade.time_exchange)}</span>
+        if (realTimeTrade.message) {
+            contentDiv.innerHTML = `
+                <div class="w-full flex flex-col justify-center items-center">
+                    <div class="flex flex-col bg-red-400 text-white py-5 w-full justify-center items-center shadow-md">
+                        <h2 class="text-md text-black text-center mt-3">${realTimeTrade.message}</h2>
+                    </div>
                 </div>
-            </div>
-        `;
+            `;
+        } else {
+            contentDiv.innerHTML = `
+                <div class="w-full flex flex-col justify-center items-center">
+                    <div class="flex flex-col bg-green-400 text-white py-5 w-full justify-center items-center shadow-md">
+                        <span class="text-sm">ID: ${realTimeTrade.uuid}</span>
+                        <h2 class="text-5xl text-black mt-3 font-bold">$${realTimeTrade.price}</h2>
+                        <h2 class="text-center text-3xl text-black mb-3 font-bold">${selectedCryptoAsset} - ${selectedFiatAsset}</h2>
+                        <span class="uppercase">${realTimeTrade.type}</span>
+                        <span>Last update: ${formatTimestamp(realTimeTrade.time_exchange)}</span>
+                    </div>
+                </div>
+            `;
+        }
     } catch (error) {
-        console.log(error)
+        console.log(error);
     } finally {
         loadingIndicator.classList.add('hidden');
     }
